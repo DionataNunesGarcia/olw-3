@@ -29,6 +29,7 @@
 
                         <x-checkout.summary-item title="Subtotal" value="210,00" />
                         <x-checkout.summary-item title="Frete" value="0" />
+                        <x-checkout.summary-item title="Taxas" value="0" />
                         <x-checkout.summary-item title="Total"  value="210,00" :is-last="true" />
 
                     </dl>
@@ -40,7 +41,7 @@
                 <form>
                     <div class="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
                         <div>
-                            <h3 id="contact-info-heading" class="text-lg font-medium text-white">Informação de contato</h3>
+                            <x-section-title title="Informações de Contato" id="contact-info-heading"/>
 
                             <div class="mt-6">
                                 <label for="email-address" class="block text-sm font-medium text-white">Email address</label>
